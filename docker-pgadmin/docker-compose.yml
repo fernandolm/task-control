@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  pgadmin:
+    container_name: pgadmin
+    image: "dpage/pgadmin4:6.8"
+    env_file:
+      - ./database.dev.env
+    ports:
+      - "127.0.0.1:5050:80"
+    networks:
+      - task-control-network
+    volumes:
+      - ./pgadmin-data/:/var/lib/pgadmin/
+      - ./pgadmin-tmp/servers.json:/pgadmin4/servers.json
+networks:
+  task-control-network:
+    driver: bridge
