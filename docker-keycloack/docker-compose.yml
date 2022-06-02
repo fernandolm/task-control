@@ -1,0 +1,48 @@
+version: '3.8'
+services:
+  keycloak_db:
+    image: postgres:10
+    environment:
+      POSTGRES_USER: postgres_keycloak_user
+      POSTGRES_PASSWORD: postgres_keycloak_password
+      POSTGRES_DB: Keycloak
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./postgres-keycloak/:/var/lib/postgresql/data/
+    networks:
+      - task-control-network
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U postgres_keycloak_user -d Keycloak
+      interval: 8s
+      timeout: 5s
+      retries: 3
+  keycloak:
+    image: quay.io/keycloak/keycloak:18.0.0
+    command: "start --auto-build --hostname=host.docker.internal --health-enabled=true --metrics-enabled=true --db=postgres --db-username=postgres_keycloak_user --db-password=postgres_keycloak_password --db-schema=public --db-url=jdbc:postgresql://host.docker.internal/Keycloak --db-url-port=5432"
+    environment:
+      KEYCLOAK_ADMIN: keycloak_admin
+      KEYCLOAK_ADMIN_PASSWORD: keycloak_admin_password
+      KEYCLOAK_LOGLEVEL: INFO
+      KC_HTTPS_KEY_STORE_FILE: /opt/keycloak/conf/keycloak_task_control.keystore
+      KC_HTTPS_KEY_STORE_PASSWORD: keycloak_task_control
+    volumes:
+      - ./keycloak_task_control.keystore:/opt/keycloak/conf/keycloak_task_control.keystore
+    depends_on:
+      keycloak_db:
+        condition: service_healthy
+    ports:
+      - '8443:8443'
+    networks:
+      - task-control-network
+    healthcheck:
+      test: "curl --fail http://localhost:8080/auth/realms/master || exit 1"
+      interval: 8s
+      timeout: 5s
+      retries: 2
+      start_period: 10s
+networks:
+  task-control-network:
+    driver: bridge

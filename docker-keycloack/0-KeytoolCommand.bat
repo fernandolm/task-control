@@ -1,0 +1,1 @@
+keytool -genkey -v -keystore keycloak_task_control.keystore -alias keycloak_task_control -keyalg RSA -keysize 2048 -validity 36500
