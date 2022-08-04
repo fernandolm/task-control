@@ -237,3 +237,150 @@ javax.servlet.ServletException: Circular view path [error]: would dispatch back 
 
 2022-08-04 01:20:31.784  INFO 14236 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
 2022-08-04 01:21:31.799  INFO 14236 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2022-08-04 01:22:31.810  INFO 14236 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2022-08-04 01:23:31.814  INFO 14236 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2022-08-04 01:23:46.503  INFO 14236 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TASK-CONTROL-DISCOVERY-SERVER with eureka with status DOWN
+2022-08-04 01:23:46.701  INFO 14236 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2022-08-04 01:23:46.705  INFO 14236 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2022-08-04 01:23:46.721  INFO 14236 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2022-08-04 01:23:46.722  INFO 14236 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2022-08-04 01:23:46.723  INFO 14236 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2022-08-04 01:23:46.727  INFO 14236 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2022-08-04 01:23:46.733  INFO 14236 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-08-04 01:23:46.734  INFO 14236 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-08-04 01:23:56.798  INFO 20456 --- [main] c.t.d.DiscoveryServerApplicationTests    : Starting DiscoveryServerApplicationTests using Java 11.0.15 on DESKTOP-5UDT0E3 with PID 20456 (started by ferna in C:\projetos\java\meusprojetos\task-control\discovery-server)
+2022-08-04 01:23:56.800 DEBUG 20456 --- [main] c.t.d.DiscoveryServerApplicationTests    : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-04 01:23:56.803  INFO 20456 --- [main] c.t.d.DiscoveryServerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2022-08-04 01:23:58.504  INFO 20456 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7a107293-5e7e-3eaa-a059-8192e43a5fca
+2022-08-04 01:24:02.018  INFO 20456 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-08-04 01:24:02.184  WARN 20456 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-04 01:24:02.398  INFO 20456 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-04 01:24:02.435  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-04 01:24:02.437  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2022-08-04 01:24:02.447  INFO 20456 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1659587042446 with initial instances count: 0
+2022-08-04 01:24:02.517  INFO 20456 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2022-08-04 01:24:02.519  INFO 20456 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8082/task-control-discovery-server/]
+2022-08-04 01:24:02.986  INFO 20456 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-08-04 01:24:02.986  INFO 20456 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-08-04 01:24:02.986  INFO 20456 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-08-04 01:24:02.987  INFO 20456 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-08-04 01:24:03.200  INFO 20456 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8082/task-control-discovery-server/
+2022-08-04 01:24:03.210  INFO 20456 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2022-08-04 01:24:03.211  INFO 20456 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2022-08-04 01:24:03.359  INFO 20456 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-04 01:24:03.434  INFO 20456 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TASK-CONTROL-DISCOVERY-SERVER with eureka with status UP
+2022-08-04 01:24:03.454  INFO 20456 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2022-08-04 01:24:03.457  INFO 20456 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2022-08-04 01:24:03.458  INFO 20456 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2022-08-04 01:24:03.459  INFO 20456 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2022-08-04 01:24:03.460  INFO 20456 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2022-08-04 01:24:03.461  INFO 20456 --- [main] c.t.d.DiscoveryServerApplicationTests    : Started DiscoveryServerApplicationTests in 7.441 seconds (JVM running for 8.75)
+2022-08-04 01:24:03.474  INFO 20456 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2022-08-04 01:24:03.958  INFO 20456 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TASK-CONTROL-DISCOVERY-SERVER with eureka with status DOWN
+2022-08-04 01:24:03.963  INFO 20456 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2022-08-04 01:24:03.975  INFO 20456 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2022-08-04 01:24:04.010  INFO 20456 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2022-08-04 01:24:04.010  INFO 20456 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2022-08-04 01:24:04.011  INFO 20456 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2022-08-04 01:24:04.020  INFO 20456 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2022-08-04 01:24:04.036  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-08-04 01:24:04.038  INFO 20456 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-08-04 01:24:24.171  INFO 15768 --- [main] c.t.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 11.0.15 on DESKTOP-5UDT0E3 with PID 15768 (C:\projetos\java\meusprojetos\task-control\discovery-server\target\classes started by ferna in C:\projetos\java\meusprojetos\task-control\discovery-server)
+2022-08-04 01:24:24.174 DEBUG 15768 --- [main] c.t.d.DiscoveryServerApplication         : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-04 01:24:24.175  INFO 15768 --- [main] c.t.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-04 01:24:25.603  INFO 15768 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79c925e1-b92e-30f6-ba87-bbd05f79813f
+2022-08-04 01:24:26.444  INFO 15768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-04 01:24:26.455  INFO 15768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-04 01:24:26.456  INFO 15768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-04 01:24:26.659  INFO 15768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-04 01:24:26.659  INFO 15768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2430 ms
+2022-08-04 01:24:27.430  INFO 15768 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2022-08-04 01:24:27.550  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-08-04 01:24:27.551  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-08-04 01:24:27.759  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-08-04 01:24:27.760  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-08-04 01:24:29.906  INFO 15768 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-08-04 01:24:29.977  WARN 15768 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-04 01:24:29.996  INFO 15768 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-04 01:24:30.024  INFO 15768 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-04 01:24:30.024  INFO 15768 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2022-08-04 01:24:30.032  INFO 15768 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1659587070031 with initial instances count: 0
+2022-08-04 01:24:30.065  INFO 15768 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2022-08-04 01:24:30.066  INFO 15768 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8082/task-control-discovery-server/]
+2022-08-04 01:24:30.255  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-08-04 01:24:30.255  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-08-04 01:24:30.255  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-08-04 01:24:30.255  INFO 15768 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-08-04 01:24:30.364  INFO 15768 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8082/task-control-discovery-server/
+2022-08-04 01:24:30.374  INFO 15768 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2022-08-04 01:24:30.376  INFO 15768 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2022-08-04 01:24:30.393  INFO 15768 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-04 01:24:30.432  INFO 15768 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TASK-CONTROL-DISCOVERY-SERVER with eureka with status UP
+2022-08-04 01:24:30.463  INFO 15768 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2022-08-04 01:24:30.467  INFO 15768 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2022-08-04 01:24:30.468  INFO 15768 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2022-08-04 01:24:30.468  INFO 15768 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2022-08-04 01:24:30.468  INFO 15768 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2022-08-04 01:24:30.485  INFO 15768 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2022-08-04 01:24:30.491  INFO 15768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-08-04 01:24:30.494  INFO 15768 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-08-04 01:24:30.945  INFO 15768 --- [main] c.t.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 7.719 seconds (JVM running for 8.259)
+2022-08-04 01:24:35.914  INFO 15768 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-04 01:24:35.915  INFO 15768 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-04 01:24:35.916  INFO 15768 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-04 01:25:30.484  INFO 15768 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2022-08-04 01:26:30.495  INFO 15768 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2022-08-04 01:26:42.402  INFO 15768 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application TASK-CONTROL-DISCOVERY-SERVER with eureka with status DOWN
+2022-08-04 01:26:42.606  INFO 15768 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2022-08-04 01:26:42.611  INFO 15768 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2022-08-04 01:26:42.627  INFO 15768 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2022-08-04 01:26:42.627  INFO 15768 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2022-08-04 01:26:42.628  INFO 15768 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2022-08-04 01:26:42.634  INFO 15768 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2022-08-04 01:26:42.642  INFO 15768 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-08-04 01:26:42.643  INFO 15768 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-08-04 01:26:51.153  INFO 14216 --- [main] c.t.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication using Java 11.0.15 on DESKTOP-5UDT0E3 with PID 14216 (C:\projetos\java\meusprojetos\task-control\discovery-server\target\classes started by ferna in C:\projetos\java\meusprojetos\task-control\discovery-server)
+2022-08-04 01:26:51.155 DEBUG 14216 --- [main] c.t.d.DiscoveryServerApplication         : Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-08-04 01:26:51.156  INFO 14216 --- [main] c.t.d.DiscoveryServerApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-08-04 01:26:52.277  INFO 14216 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79c925e1-b92e-30f6-ba87-bbd05f79813f
+2022-08-04 01:26:52.815  INFO 14216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-04 01:26:52.824  INFO 14216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-04 01:26:52.825  INFO 14216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-04 01:26:52.970  INFO 14216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-04 01:26:52.971  INFO 14216 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+2022-08-04 01:26:53.479  INFO 14216 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2022-08-04 01:26:53.536  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-08-04 01:26:53.537  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-08-04 01:26:53.711  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-08-04 01:26:53.711  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-08-04 01:26:55.232  INFO 14216 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-08-04 01:26:55.330  WARN 14216 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-04 01:26:55.354  INFO 14216 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-08-04 01:26:55.387  INFO 14216 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-08-04 01:26:55.388  INFO 14216 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2022-08-04 01:26:55.396  INFO 14216 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1659587215395 with initial instances count: 0
+2022-08-04 01:26:55.426  INFO 14216 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2022-08-04 01:26:55.428  INFO 14216 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8082/task-control-discovery-server/]
+2022-08-04 01:26:55.704  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-08-04 01:26:55.704  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-08-04 01:26:55.704  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-08-04 01:26:55.704  INFO 14216 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-08-04 01:26:55.844  INFO 14216 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8082/task-control-discovery-server/
+2022-08-04 01:26:55.853  INFO 14216 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2022-08-04 01:26:55.855  INFO 14216 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2022-08-04 01:26:55.864  INFO 14216 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-04 01:26:55.895  INFO 14216 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TASK-CONTROL-DISCOVERY-SERVER with eureka with status UP
+2022-08-04 01:26:55.909  INFO 14216 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2022-08-04 01:26:55.914  INFO 14216 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2022-08-04 01:26:55.914  INFO 14216 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2022-08-04 01:26:55.914  INFO 14216 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2022-08-04 01:26:55.915  INFO 14216 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2022-08-04 01:26:55.927  INFO 14216 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2022-08-04 01:26:55.935  INFO 14216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-08-04 01:26:55.936  INFO 14216 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-08-04 01:26:56.305  INFO 14216 --- [main] c.t.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 6.632 seconds (JVM running for 8.137)
+2022-08-04 01:27:29.352  INFO 14216 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-04 01:27:29.353  INFO 14216 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-04 01:27:29.355  INFO 14216 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-04 01:27:55.927  INFO 14216 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2022-08-04 01:28:55.932  INFO 14216 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
